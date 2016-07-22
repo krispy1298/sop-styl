@@ -1,4 +1,4 @@
-$embed-responsive
+embed-responsive(width = 16, height = 9)
   position relative
   display  block
 
@@ -7,7 +7,12 @@ $embed-responsive
 
   overflow hidden
 
-$embed-responsive-item
+  padding-bottom (100 * height / width)%
+
+$embed-responsive
+  embed-responsive()
+
+embed-responsive-item()
   position absolute
 
   top    0
@@ -19,9 +24,11 @@ $embed-responsive-item
 
   border 0
 
+$embed-responsive-item
+  embed-responsive-item()
+
 $embed-responsive-16by9
-  padding-bottom 56.25%
+  embed-responsive()
 
 $embed-responsive-4by3
-  padding-bottom 75%
-
+  embed-responsive(4, 3)

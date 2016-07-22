@@ -1,6 +1,6 @@
 {
   "name": "sop-styl",
-  "version": "1.0.0",
+  "version": "1.5.4",
   "description": "Someoddpilot's base Stylus framework",
   "main": "lib/sop-styl.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexsomeoddpilot/sop-styl.git"
+    "url": "https://github.com/someoddpilotinc/sop-styl.git"
   },
   "keywords": [
     "stylus",
@@ -17,19 +17,20 @@
   "author": "Alex Robertson <alex@someoddpilot.com>",
   "license": "None",
   "bugs": {
-    "url": "https://github.com/alexsomeoddpilot/sop-styl/issues"
+    "url": "https://github.com/someoddpilotinc/sop-styl/issues"
   },
-  "homepage": "https://github.com/alexsomeoddpilot/sop-styl",
+  "homepage": "https://github.com/someoddpilotinc/sop-styl",
   "dependencies": {
     "nib": "*",
-    "stylus": "0.45.x"
+    "stylus": ">0.45"
   },
   "engines": {
-    "node": "*"
+    "node": ">=0.10"
   },
+  "contributors": [],
   "devDependencies": {
-    "connect": "1.x",
-    "jade": "0.22.0",
+    "connect": "3.x",
+    "jade": "1.x",
     "mocha": "*",
     "should": "*"
   }

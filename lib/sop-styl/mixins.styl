@@ -1,5 +1,8 @@
 @import "nib"
 
+backface-visibility()
+  vendor("backface-visibility", arguments, only: webkit official)
+
 appearance()
   vendor("appearance", arguments, only: webkit moz official)
 
@@ -20,3 +23,9 @@ animation-delay()
 
 animation-duration()
   vendor("animation-duration", arguments, only: webkit official)
+
+random(min,max)
+  return floor(math(0, 'random')*(max - min + 1) + min)
+
+filter()
+  vendor("filter", arguments, only: webkit official)
